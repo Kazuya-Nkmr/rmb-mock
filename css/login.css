@@ -1,0 +1,19 @@
+.login-area {
+  /* position: absolute; */
+  margin : 0 auto;
+  margin-top: 150px;
+  width: 400px;
+  height: 320px;
+  padding: 25px;
+  -webkit-box-shadow: 0 0 100px rgba(0,0,0,0.15);
+  box-shadow: 0 0 100px rgba(0,0,0,0.15);
+  background-color: #f8f8f8;
+}
+
+.login-logo{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  max-width: 200px;
+  max-height: 100px;
+}
