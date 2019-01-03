@@ -5,9 +5,9 @@
   width: 400px;
   height: 320px;
   padding: 25px;
-  -webkit-box-shadow: 0 0 100px rgba(0,0,0,0.15);
-  box-shadow: 0 0 100px rgba(0,0,0,0.15);
-  background-color: #f8f8f8;
+  /* センターリングにシャドーする場合のcss */
+  /* -webkit-box-shadow: 0 0 100px rgba(0,0,0,0.15);
+  box-shadow: 0 0 100px rgba(0,0,0,0.15); */
 }
 
 .login-logo{

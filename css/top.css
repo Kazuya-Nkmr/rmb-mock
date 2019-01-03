@@ -1,31 +1,58 @@
-.contents-area {
+
+.logout-area {
   margin : 0 auto;
-  width : 900px;
+  width: 600px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
-.monster-info {
-    height: 320px;
-    background: #ffffff;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 10px;
+.logout-button {
+  background: orange;
+  border-radius: 10px;
+  width: 70px;
+  line-height: 44px;
+}
+.logout:hover {
+  color: white;
 }
 
-.monster-img-area {
-  width : 500px;
-  height: 100%;
-  float: left;
+.contents {
+  margin : 0 auto;
+  width: 400px;
+  margin-bottom: 30px;
 }
 
-.monster-img {
-    max-width: 500px;
-    height: 100%;
+.heading {
+  font-size: 20px;
+  color: orange;
+  margin-bottom: 25px;
 }
 
-.monster-status-area {
-  float: right;
-  clear: both;
-  padding: 10px;
-  width : 400px;
-  height : 100%;
+.contents-button {
+  margin-bottom: 50px;
+  background: white;
+  border-radius: 10px;
+  line-height: 44px;
+}
+
+.contents-button:hover{
+  background: orange;
+  color:white;
+}
+
+.chat-message-area {
+  width:350px;
+  height: 25px;
+  border-radius: 10px;
+}
+
+.chat-message-button {
+    background: orange;
+  width:100px;
+  border-radius: 10px;
+  line-height: 20px;
+}
+.chat-message-button:hover {
+  color: white;
 }

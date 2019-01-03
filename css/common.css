@@ -1,15 +1,19 @@
 body {
-  background-color: #f8f8f8;
+  background-color: #2f2f2f;
   font-family: 'Lato', arial;
   font-size: 15px;
+  padding: 0;
+  margin: 0;
+  color: black;
   /* height: 100%; */
   /* overflow-y: hidden; */
 }
 
 /* btn  */
+
 .rmb-btn {
-  background: #28CA97;
-  color: white;
+  /* background: #28CA97; */
+  color: red;
   margin: 0;
   border: 0;
   cursor: pointer;
@@ -17,10 +21,11 @@ body {
 }
 
 .rmb-btn.all {
-  width:100%;
+  width: 100%;
 }
+
 .rmb-btn.half-lineup {
-  width:50%;
+  width: 50%;
   float: left;
   border: 1px solid #ddd;
 }
@@ -29,14 +34,15 @@ body {
   background: #aaa;
 }
 
-.contents-btn{
-  padding : 20px;
+.contents-btn {
+  padding: 20px;
 }
 
 /* modal */
+
 .rmb-modal {
   position: absolute;
-  width : 80%;
+  width: 80%;
 }
 
 .rmb-modal .sections {
@@ -47,7 +53,7 @@ body {
   padding: 30px;
 }
 
-.rmb-modal section input{
+.rmb-modal section input {
   width: 100%;
   border-radius: 3px;
   border: 1px solid #ddd;
@@ -55,7 +61,6 @@ body {
   padding: 10px;
   font-size: 14px;
 }
-
 
 .rmb-modal section input:focus {
   border-color: #28CA97;
@@ -80,6 +85,7 @@ body {
   color: #a9a9a9;
   cursor: pointer;
 }
+
 
 .rmb-modal .icon-close:hover, .rmb-modal .icon-close:focus {
   color: black;
