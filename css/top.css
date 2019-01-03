@@ -1,6 +1,5 @@
-
 .logout-area {
-  margin : 0 auto;
+  margin: 0 auto;
   width: 600px;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -13,14 +12,34 @@
   width: 70px;
   line-height: 44px;
 }
-.logout:hover {
+
+.logout-button:hover {
   color: white;
 }
 
 .contents {
-  margin : 0 auto;
+  margin: 0 auto;
   width: 400px;
   margin-bottom: 30px;
+}
+
+.menu-info {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-info > div {
+  display: flex;
+  justify-content: center;
+	align-items: center;
+  width: 45%;
+  height: 50px;
+  border-radius: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .heading {
@@ -29,30 +48,20 @@
   margin-bottom: 25px;
 }
 
-.contents-button {
-  margin-bottom: 50px;
-  background: white;
-  border-radius: 10px;
-  line-height: 44px;
-}
-
-.contents-button:hover{
-  background: orange;
-  color:white;
-}
 
 .chat-message-area {
-  width:350px;
+  width: 350px;
   height: 25px;
   border-radius: 10px;
 }
 
 .chat-message-button {
-    background: orange;
-  width:100px;
+  background: orange;
+  width: 100px;
   border-radius: 10px;
   line-height: 20px;
 }
+
 .chat-message-button:hover {
   color: white;
 }

@@ -13,12 +13,18 @@ body {
 
 .rmb-btn {
   /* background: #28CA97; */
-  color: red;
+  color: black;
+  background: orange;
   margin: 0;
   border: 0;
   cursor: pointer;
   height: 36px;
 }
+
+.rmb-btn:hover {
+  color:white;
+}
+
 
 .rmb-btn.all {
   width: 100%;
