@@ -47,6 +47,7 @@ body {
 /* modal */
 
 .rmb-modal {
+  background-color: #2f2f2f;
   position: absolute;
   width: 80%;
 }
@@ -91,7 +92,6 @@ body {
   color: #a9a9a9;
   cursor: pointer;
 }
-
 
 .rmb-modal .icon-close:hover, .rmb-modal .icon-close:focus {
   color: black;
