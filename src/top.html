@@ -32,42 +32,13 @@
       <div class="heading">Menu</div>
       <div class="menu-info">
         <a id="show_" href="./create.html" class="rmb-btn">Create</a>
-        <a id="show_" href="#" class="rmb-btn">Battle</a>
-        <a id="show_" href="#" class="rmb-btn">Show</a>
-        <a id="show_" href="#" class="rmb-btn">Rank</a>
+        <a id="show_" href="#" class="rmb-btn rmb-cancel">Battle</a>
+        <a id="show_" href="#" class="rmb-btn rmb-cancel">Show</a>
+        <a id="show_" href="#" class="rmb-btn modal-rank-trigger">Rank</a>
         <a id="show_" href="#" class="rmb-btn modal-chat-trigger">Chat</a>
-        <a id="show_" href="#" class="rmb-btn">Log</a>
+        <a id="show_" href="#" class="rmb-btn rmb-cancel">Log</a>
       </div>
     </section>
-
-    <!-- <div class="contents">
-      <div class="heading">Chat</div>
-
-      <div class="send">
-        <input type="text" class="chat-message-area">
-        <span type="button" class="chat-message-button">send</span>
-      </div>
-      <div class="chat">
-        <div>aaaa</div>
-        <div>bbbb</div>
-        <div>cccc</div>
-        <div>dddd</div>
-        <div>dddd</div>
-        <div>dddd</div>
-      </div>
-    </div>
-
-    <div class="contents">
-      <div class="heading">Log</div>
-      <div class="log">
-        <div>aaaa</div>
-        <div>bbbb</div>
-        <div>cccc</div>
-        <div>dddd</div>
-        <div>dddd</div>
-        <div>dddd</div>
-      </div>
-    </div> -->
   </main>
   <section class="modal-area">
     <div id="modal-chat" class="rmb-modal" style="display:none;">
@@ -147,12 +118,60 @@
             </div>
           </div>
           <div class="chat-send">
-            <form>
-              <input type="text" class="chat-message-area">
-              <button type="button" class="chat-message-button">send</button>
-            </form>
+            <input type="text" class="chat-message-area">
+            <button type="button" class="chat-message-button">send</button>
           </div>
         </div>
+
+        <div id="modal-rank" class="rmb-modal" style="display:none;">
+          <button data-iziModal-close class="icon-close">×</button>
+          <div class="sections">
+            <div class="modal-contents">
+              <div class="heading">Rank</div>
+              <!-- <section>Offense</section>
+              <section>Diffence</section> -->
+              <div class="rank-data">
+                <div class="rank-no no-top">1</div>
+              </div>
+              <div class="rank-data">
+                <div class="rank-no no-2-10">2</div>
+              </div>
+              <div class="rank-data">
+                <div class="rank-no no-2-10">3</div>
+              </div>
+              <div class="rank-data">
+                <div class="rank-no no-2-10">4</div>
+              </div>
+              <div class="rank-data">
+                <div class="rank-no no-2-10">5</div>
+              </div>
+              <div class="rank-data">
+                <div class="rank-no no-2-10">6</div>
+              </div>
+              <div class="rank-data">
+                <div class="rank-no no-2-10">7</div>
+              </div>
+              <div class="rank-data">
+                <div class="rank-no no-2-10">8</div>
+              </div>
+              <div class="rank-data">
+                <div class="rank-no no-2-10">9</div>
+              </div>
+              <div class="rank-data">
+                <div class="rank-no no-2-10">10</div>
+              </div>
+              <div class="rank-data">
+                <div class="rank-no no-11-50">11</div>
+              </div>
+              <div class="rank-data">
+                <div class="rank-no no-11-50">12</div>
+              </div>
+              <div class="rank-data">
+                <div class="rank-no no-11-50">130</div>
+              </div>
+
+            </div>
+          </div>
   </section>
   </div>
   </div>
@@ -162,9 +181,14 @@
 <script>
   $(function() {
     $("#modal-chat").iziModal();
+    $("#modal-rank").iziModal();
     $(document).on('click', '.modal-chat-trigger', function(event) {
       event.preventDefault();
       $('#modal-chat').iziModal('open');
+    });
+    $(document).on('click', '.modal-rank-trigger', function(event) {
+      event.preventDefault();
+      $('#modal-rank').iziModal('open');
     });
   });
 </script>
