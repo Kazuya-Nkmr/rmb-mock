@@ -22,6 +22,7 @@ body {
   border: 0;
   cursor: pointer;
   height: 36px;
+  border-radius: 30px;
 }
 
 .rmb-circle-btn {
@@ -37,6 +38,7 @@ body {
   margin-bottom: 5px;
   margin-left: 5px;
   margin-right: 5px;
+  border-radius: 10px;
 }
 
 .rmb-btn:hover {
@@ -116,25 +118,4 @@ body {
 
 .rmb-modal.hasScroll .icon-close {
   display: none;
-}
-
-.rank-no {
-  width: 30px;
-  height: 30px;
-  color: white;
-  text-align: center;
-  margin-top: 5px;
-  border-radius: 50%;
-}
-
-.rank-no.no-top {
-  background: red;
-}
-
-.rank-no.no-2-10 {
-  background: green;
-}
-
-.rank-no.no-11-50 {
-  background: blue;
 }

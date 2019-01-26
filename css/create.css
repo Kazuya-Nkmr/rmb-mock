@@ -36,11 +36,10 @@ li {
 
 }
 
-.button-area{
-  position: absolute;
+.btn-area {
   margin: auto;
 }
 
-.button-area a{
+.btn-area a {
   margin-top: 25px;
 }
