@@ -32,7 +32,7 @@
       <div class="menu-info">
         <a id="show_" href="./create.html" class="rmb-btn">Create</a>
         <a id="show_" href="#" class="rmb-btn rmb-cancel">Battle</a>
-        <a id="show_" href="#" class="rmb-btn rmb-cancel">Show</a>
+        <a id="show_" href="#" class="rmb-btn modal-show-trigger">Show</a>
         <a id="show_" href="#" class="rmb-btn modal-rank-trigger">Rank</a>
         <a id="show_" href="#" class="rmb-btn modal-chat-trigger">Chat</a>
         <a id="show_" href="#" class="rmb-btn modal-log-trigger">Log</a>
@@ -40,6 +40,7 @@
     </section>
   </main>
   <section class="modal-area">
+    <!-- modal-start -->
     <section id="modal-chat" class="rmb-modal" style="display:none;">
       <button data-iziModal-close class="icon-close">×</button>
       <div class="modal-main-contents">
@@ -196,6 +197,42 @@
         <div class="log-data"><span class="log-type badge badge-warning">SYSTEM</span><span class="log-time">2018/1/1 12:30</span><span class="log-text">AAAAAA</span></div>
       </div>
     </section>
+
+    <section id="modal-show" class="rmb-modal" style="display:none;">
+      <button data-iziModal-close class="icon-close">×</button>
+      <div class="modal-contents">
+        <div class="heading">Show</div>
+        
+        <div class="show-change-area">
+          <ul class="show-btn">
+            <li><span class="selected"></span></li>
+            <li><span class=""></span></li>
+            <li><span class=""></span></li>
+            <li><span class=""></span></li>
+            <li><span class=""></span></li>
+            <li><span class="show-miss"></span></li>
+          </ul>
+        </div>
+        <div class="show-area">
+          <div id="showContents1" class="show-contents">
+            <div>
+              <img width="450" height="250" src="../img/1_list.jpg">
+            </div>
+            <div class="show-record">
+              <span class="show-label badge badge-danger">WIN</span><span>100</span>
+              <span class="show-label badge badge-primary">LOSE</span><span>100</span>
+            </div>
+            <div class="show-status">
+              <span class="show-small-label badge badge-success">HP</span><span>100</span>
+              <span class="show-small-label badge badge-danger">ATK</span><span>100</span>
+              <span class="show-small-label badge badge-primary">DEF</span><span>100</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- modal-end -->
   </section>
 </body>
 <script>
@@ -203,6 +240,7 @@
     $("#modal-chat").iziModal();
     $("#modal-rank").iziModal();
     $("#modal-log").iziModal();
+    $("#modal-show").iziModal();
     $(document).on('click', '.modal-chat-trigger', function(event) {
       event.preventDefault();
       $('#modal-chat').iziModal('open');
@@ -214,6 +252,10 @@
     $(document).on('click', '.modal-log-trigger', function(event) {
       event.preventDefault();
       $('#modal-log').iziModal('open');
+    });
+    $(document).on('click', '.modal-show-trigger', function(event) {
+      event.preventDefault();
+      $('#modal-show').iziModal('open');
     });
   });
 </script>

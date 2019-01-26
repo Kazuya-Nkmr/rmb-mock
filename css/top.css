@@ -195,6 +195,62 @@
 .log-data .log-time {
   width: 120px;
 }
+
 .log-data .log-text {
   width: 300px;
+}
+
+.show-change-area {
+  margin-top: -25px;
+}
+
+.show-area {
+  color: white;
+  font-size: 15px;
+}
+
+.show-record {}
+
+.show-status {
+  margin-top: 20px;
+}
+
+.show-label {
+  width: 70px;
+  height: 30px;
+  font-size: 20px;
+}
+
+.show-small-label {
+  width: 50px;
+  height: 20px;
+  font-size: 12px;
+}
+
+.show-btn ul {
+  text-align: center;
+}
+
+.show-btn li {
+  text-align: center;
+  list-style: none;
+  display: inline;
+}
+
+.show-btn li span {
+  display: inline-block;
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.show-btn li span.selected {
+  background-color: orange;
+}
+
+.show-btn li span:hover {
+  background-color: orange;
 }
