@@ -38,12 +38,12 @@
       </header>
       <div class="modal-main-contents">
         <section class="hide">
-          <input type="text" placeholder="Username">
-          <input type="password" placeholder="Password">
-          <footer>
+          <form  id="login-form" action="top.html" method="post">
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
             <button class="rmb-btn half-lineup rmb-cancel" data-iziModal-close data-iziModal-transitionOut="bounceOutDown">Cancel</button>
-            <button class="rmb-btn half-lineup next">Login</button>
-          </footer>
+            <button name="Login" type="submit" class="rmb-btn half-lineup next">Login</button>
+          </form>
         </section>
       </div>
     </section>
@@ -57,10 +57,10 @@
           <input type="text" placeholder="Username">
           <input type="password" placeholder="Password">
           <input type="text" placeholder="Email">
-          <footer>
+          <form action="" method="post">
             <button class="rmb-btn half-lineup cancel" data-iziModal-close data-iziModal-transitionOut="bounceOutDown">Cancel</button>
             <button class="rmb-btn half-lineup next">Create Account</button>
-          </footer>
+          </form>
         </section>
       </div>
     </section>
@@ -81,7 +81,7 @@
     });
     $(document).on('click', '.next', function(event) {
       event.preventDefault();
-      location.href = 'top.html';
+      $('#login-form').submit();
     });
   });
 </script>

@@ -141,12 +141,6 @@
 
 .rank-title {
   color: orange;
-  /* width: 30px;
-  height: 30px;
-  color: white;
-  text-align: center;
-  margin-top: 5px;
-  border-radius: 50%; */
 }
 
 .rank-area {
@@ -156,27 +150,51 @@
 .rank-data {
   color: white;
   margin-top: 10px;
-  /* width: 30px;
-  height: 30px;
-  color: white;
-  text-align: center;
-  margin-top: 5px;
-  border-radius: 50%; */
 }
 
-.rank-data span, .rank-title span{
+.rank-data span, .rank-title span {
   display: inline-block;
 }
-.rank-data .rank-no, .rank-title .rank-no{
+
+.rank-data .rank-no, .rank-title .rank-no {
   width: 40px;
 }
 
-.rank-data .rank-rate, .rank-title .rank-rate{
+.rank-data .rank-rate, .rank-title .rank-rate {
   width: 50px;
 }
-.rank-data .rank-monster-name, .rank-title .rank-monster-name{
+
+.rank-data .rank-monster-name, .rank-title .rank-monster-name {
   width: 120px;
 }
-.rank-data .rank-user-name, .rank-title .rank-user-name{
+
+.rank-data .rank-user-name, .rank-title .rank-user-name {
   width: 120px;
+}
+
+.log-area {
+  margin-left: 40px;
+}
+
+.log-data {
+  color: white;
+  margin-top: 10px;
+}
+
+.log-data span {
+  display: inline-block;
+}
+
+.log-data .log-type {
+  width: 60px;
+  height: 20px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.log-data .log-time {
+  width: 120px;
+}
+.log-data .log-text {
+  width: 300px;
 }
