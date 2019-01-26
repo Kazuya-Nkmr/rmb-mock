@@ -19,56 +19,53 @@
 </head>
 
 <body>
-  <header></header>
   <main class="main">
     <section class="login-area">
       <!-- <div class="login-logo">RMB</div> -->
       <div class="rmb-contents-btn">
-        <button class="modal-login-trigger rmb-btn all">LOGIN
-          </a>
+        <button class="modal-login-trigger rmb-btn all">LOGIN</button>
       </div>
       <div class="rmb-contents-btn">
-        <button class="modal-adduser-trigger rmb-btn all">Create Account</a>
+        <button class="modal-adduser-trigger rmb-btn all">Create Account</button>
       </div>
     </section>
   </main>
-  <footer>
-  </footer>
-  <div>
-    <div id="modal-login" class="rmb-modal" style="display:none;">
+  <section class="modal-area">
+    <section id="modal-login" class="rmb-modal" style="display:none;">
       <button data-iziModal-close class="icon-close">×</button>
-        <header>
-          <!-- Login -->
-        </header>
-        <div class="sections">
-          <section class="hide">
-            <input type="text" placeholder="Username">
-            <input type="password" placeholder="Password">
-            <footer>
-              <button class="rmb-btn half-lineup rmb-cancel" data-iziModal-close data-iziModal-transitionOut="bounceOutDown">Cancel</button>
-              <button class="rmb-btn half-lineup next">Login</button>
-            </footer>
-          </section>
-        </div>
+      <header>
+        <!-- Login -->
+      </header>
+      <div class="modal-main-contents">
+        <section class="hide">
+          <input type="text" placeholder="Username">
+          <input type="password" placeholder="Password">
+          <footer>
+            <button class="rmb-btn half-lineup rmb-cancel" data-iziModal-close data-iziModal-transitionOut="bounceOutDown">Cancel</button>
+            <button class="rmb-btn half-lineup next">Login</button>
+          </footer>
+        </section>
       </div>
-      <div id="modal-adduser" class="rmb-modal">
-        <button data-iziModal-close class="icon-close">×</button>
-        <header>
-          <!-- Add User -->
-        </header>
-        <div class="sections">
-          <section>
-            <input type="text" placeholder="Username">
-            <input type="password" placeholder="Password">
-            <input type="text" placeholder="Email">
-            <footer>
-              <button class="rmb-btn half-lineup cancel" data-iziModal-close data-iziModal-transitionOut="bounceOutDown">Cancel</button>
-              <button class="rmb-btn half-lineup next">Create Account</button>
-            </footer>
-          </section>
-        </div>
+    </section>
+    <section id="modal-adduser" class="rmb-modal">
+      <button data-iziModal-close class="icon-close">×</button>
+      <header>
+        <!-- Add User -->
+      </header>
+      <div class="modal-main-contents">
+        <section>
+          <input type="text" placeholder="Username">
+          <input type="password" placeholder="Password">
+          <input type="text" placeholder="Email">
+          <footer>
+            <button class="rmb-btn half-lineup cancel" data-iziModal-close data-iziModal-transitionOut="bounceOutDown">Cancel</button>
+            <button class="rmb-btn half-lineup next">Create Account</button>
+          </footer>
+        </section>
       </div>
-      </div>
+    </section>
+  </section>
+  </div>
 </body>
 <script>
   $(function() {
@@ -88,4 +85,5 @@
     });
   });
 </script>
+
 </html>

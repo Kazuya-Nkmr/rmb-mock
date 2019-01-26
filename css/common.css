@@ -71,11 +71,8 @@ body {
   width: 80%;
 }
 
-.rmb-modal .sections {
+.rmb-modal .modal-main-contents {
   overflow: hidden;
-}
-
-.rmb-modal section {
   padding: 30px;
 }
 
