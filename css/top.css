@@ -251,6 +251,11 @@
   background-color: orange;
 }
 
+.show-img {
+  width: 400px;
+  height: 250px;
+}
+
 .show-btn li span:hover {
   background-color: orange;
 }
